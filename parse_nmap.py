@@ -3,6 +3,9 @@ import argparse
 from lxml import etree
 import os
 import datetime
+import time
+from time import mktime
+from datetime import datetime
 
 def parse_nmap_xml(xml_file):
     """
@@ -104,7 +107,7 @@ def generate_html_report(hosts_data, nmap_command, output_file, input_file):
         output_file (str): Path to the output HTML file.
         input_file (str): Path of the source XML file for the report header.
     """
-    modification_timestamp = os.path.getmtime(input_file)
+    modification_timestamp = datetime.fromtimestamp(os.path.getmtime(input_file))
     html = f"""
 <!DOCTYPE html>
 <html lang="en">
