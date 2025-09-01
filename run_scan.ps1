@@ -1,3 +1,5 @@
+﻿#requires -RunAsAdministrator
+
 <#
 .SYNOPSIS
     Runs an Nmap scan on a specified network, saves the results as XML,
@@ -20,7 +22,7 @@ $NETWORK_CIDR = "192.168.1.0/24"
 # Set the ABSOLUTE path where you want to store the scripts and results.
 # IMPORTANT: This script assumes parse_nmap.py is in this same directory.
 # Example for a standard web server on Windows (IIS):
-$OUTPUT_DIR = "."
+$OUTPUT_DIR = "C:\inetpub\wwwroot\nmap-dashboard"
 
 # --- Script Logic ---
 
@@ -112,6 +114,3 @@ catch {
 
 Write-Log "Report generated successfully at '$HTML_OUTPUT'"
 Write-Host "-----------------------------------------------------"
-
-Write-Host "Scan and report complete. You can view the results in your web browser."
-Write-Host "If you are running a local web server, navigate to:"
