@@ -1,6 +1,8 @@
 import sys
 import argparse
 from lxml import etree
+import os
+import datetime
 
 def parse_nmap_xml(xml_file):
     """
@@ -129,6 +131,7 @@ def generate_html_report(hosts_data, nmap_command, output_file, input_file):
     <h1>Nmap Scan Report</h1>
     <div class="report-meta">
         <strong>Source File:</strong> {input_file}<br>
+        <strong>Time of the scan:</strong> {modification_timestamp = os.path.getmtime(file_path).strftime('%Y-%m-%d %H:%M:%S')}<br>
         <strong>Scan Command:</strong> <code>{nmap_command}</code>
     </div>
     """
