@@ -104,7 +104,7 @@ def generate_html_report(hosts_data, nmap_command, output_file, input_file):
         output_file (str): Path to the output HTML file.
         input_file (str): Path of the source XML file for the report header.
     """
-    modification_timestamp = os.path.getmtime(input_file).strftime('%Y-%m-%d %H:%M:%S')
+    modification_timestamp = os.path.getmtime(input_file)
     html = f"""
 <!DOCTYPE html>
 <html lang="en">
