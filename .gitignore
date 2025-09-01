@@ -3,6 +3,7 @@ __pycache__/
 *.py[codz]
 *$py.class
 scan_results.*
+index.html
 # C extensions
 *.so
 
