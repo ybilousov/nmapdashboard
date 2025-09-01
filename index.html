@@ -1,0 +1,4307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmap Scan Report</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 2em; background-color: #f4f4f9; color: #333; }
+        h1 { color: #d9534f; border-bottom: 2px solid #d9534f; padding-bottom: 10px; }
+        h2 { color: #0275d8; margin-top: 2em; border-bottom: 1px solid #ccc; }
+        .report-meta { background-color: #f0f0f0; padding: 10px; border-radius: 5px; margin-bottom: 2em; font-family: "Courier New", Courier, monospace; }
+        .host-block { background-color: #fff; border: 1px solid #ddd; border-radius: 5px; padding: 1.5em; margin-bottom: 1.5em; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #f7f7f7; font-weight: 600; }
+        .status-up { color: #5cb85c; font-weight: bold; }
+        .status-down { color: #d9534f; font-weight: bold; }
+        .port-open { color: #5cb85c; font-weight: bold; }
+        .no-ports { font-style: italic; color: #777; }
+        .footer { margin-top: 2em; text-align: center; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+    <h1>Nmap Scan Report</h1>
+    <div class="report-meta">
+        <strong>Source File:</strong> scan_results.xml<br>
+        <strong>Scan Command:</strong> <code>nmap -sV -O --host-timeout 20m -T4 -oX /var/www/html/nmap-dashboard/scan_results.xml 192.168.1.0/24</code>
+    </div>
+    
+    <div class="host-block">
+        <h2>Host: 192.168.1.1 (G3100.myfiosgateway.com) - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>53</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>domain</td>
+                    <td>Cloudflare public DNS</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>444</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>snpp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.100  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>23</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>telnet</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>389</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>ldap</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>636</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>ldapssl</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2001</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>dc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2068</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>avocentkvm</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3268</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>globalcatLDAP</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3269</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>globalcatLDAPssl</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.106  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>23</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>telnet</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>webserver</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td>webserver</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2068</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>avocentkvm</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.114  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>7.4</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.115  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>ssh</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>VMware ESXi Server httpd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>902</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vmware-auth</td>
+                    <td>VMware Authentication Daemon</td>
+                    <td>1.10</td>
+                </tr>
+                    
+                <tr>
+                    <td>5988</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>wbem-http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5989</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>wbem-https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http-alt</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8300</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tmi</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>glrpc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.116  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>8.4p1 Debian 5+deb11u3</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.117  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.2p1 Debian 2+deb12u2</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>111</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rpcbind</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.121  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.3</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>389</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ldap</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td>VMware vCenter Server SOAP API</td>
+                    <td>9.0.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>514</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>shell</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>636</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ldap</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>902</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>iss-realsecure</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2020</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>xinupageserver</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6502</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>netop-rc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8084</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>websnp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.125  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>9999</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>abyss</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.128  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.129  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.132  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.134  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>49152</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>62078</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.135  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.137  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.139  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.142  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.143  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.144  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.145  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>6668</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>irc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.146  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.148  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.149  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>8.9p1 Ubuntu 3ubuntu0.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td>1.18.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>5432</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>postgresql</td>
+                    <td>PostgreSQL DB</td>
+                    <td>9.6.0 or later</td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td>1.18.0</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.15  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>7</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>echo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>discard</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>13</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>daytime</td>
+                    <td>Microsoft Windows USA daytime</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>17</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>qotd</td>
+                    <td>Windows qotd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>19</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>chargen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>53</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>domain</td>
+                    <td>Simple DNS Plus</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Microsoft IIS httpd</td>
+                    <td>10.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>88</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>kerberos-sec</td>
+                    <td>Microsoft Windows Kerberos</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>135</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>msrpc</td>
+                    <td>Microsoft Windows RPC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Microsoft Windows netbios-ssn</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>389</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ldap</td>
+                    <td>Microsoft Windows Active Directory LDAP</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>microsoft-ds</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>464</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>kpasswd5</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>593</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ncacn_http</td>
+                    <td>Microsoft Windows RPC over HTTP</td>
+                    <td>1.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>636</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3268</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ldap</td>
+                    <td>Microsoft Windows Active Directory LDAP</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3269</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3389</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ms-wbt-server</td>
+                    <td>Microsoft Terminal Services</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5357</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Microsoft HTTPAPI httpd</td>
+                    <td>2.0</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.150  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.151  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>6668</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>irc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.152  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>49152</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>62078</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.155  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>49152</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>62078</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.156  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.158  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>6668</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>irc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.160  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>5000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rtsp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>7000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rtsp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>7100</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rtsp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>49152</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>49153</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>62078</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.162  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>8009</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.163  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>53</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>domain</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3001</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nessus</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.164  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>135</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>msrpc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>netbios-ssn</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>microsoft-ds</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3389</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>ms-wbt-server</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9000</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>cslistener</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9010</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>sdr</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>16992</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>amt-soap-http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>16993</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>amt-soap-https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.167  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>6668</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>irc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.169  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>21</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ftp</td>
+                    <td>Pure-FTPd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>8.9p1 Ubuntu 3ubuntu0.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>25</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>smtp</td>
+                    <td>Postfix smtpd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>53</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>domain</td>
+                    <td>PowerDNS Authoritative Server</td>
+                    <td>4.5.3</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>LiteSpeed</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>110</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>pop3</td>
+                    <td>Dovecot pop3d</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>143</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>imap</td>
+                    <td>Dovecot imapd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>465</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>587</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>smtp</td>
+                    <td>Postfix smtpd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>993</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>imaps</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>995</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>pop3s</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8090</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>opsmessaging</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>40193</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.172  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>6668</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>irc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.175  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>8.5</td>
+                </tr>
+                    
+                <tr>
+                    <td>264</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>bgmp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>417</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>onmux</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>616</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>sco-sysmgr</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>801</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>device</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>1030</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>iad1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>1037</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>ams</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>1076</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>sns_credit</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>1199</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>dmidi</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2170</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>eyetv</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2718</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>pn-requester2</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3030</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>arepa-cas</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5080</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>onscreen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5730</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>unieng</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5904</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>ag-swim</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5911</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>cpdlc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6006</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>X11:6</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6025</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>x11</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6667</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>irc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6699</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>napster</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>7070</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>realserver</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>7200</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>fodms</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>50389</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>52848</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.176  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>8.7</td>
+                </tr>
+                    
+                <tr>
+                    <td>9090</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>zeus-admin</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.178  - <span class="status-up">UP</span></h2>
+            <p class='no-ports'>No open ports found on this host (or ports were not scanned).</p></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.179  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.12</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.184  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.187  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Netgear GS110TP http config</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>4242</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vrml-multi-use</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.191  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>5555</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>freeciv</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8009</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>glrpc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.20  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>21</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ftp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>8.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>111</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rpcbind</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>3.X - 4.X</td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>3.X - 4.X</td>
+                </tr>
+                    
+                <tr>
+                    <td>548</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>afp</td>
+                    <td>Netatalk</td>
+                    <td>3.1.12</td>
+                </tr>
+                    
+                <tr>
+                    <td>554</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rtsp</td>
+                    <td>D-Link DCS-2130 or Pelco IDE10DN webcam rtspd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>873</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rsync</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>1935</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rtmp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2049</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nfs</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>3261</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>iscsi</td>
+                    <td>Synology DSM Snapshot Replication iSCSI LUN</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>4045</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nlockmgr</td>
+                    <td></td>
+                    <td>1-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>5000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5001</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5357</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5510</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>secureidprop</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nagios-nsca</td>
+                    <td>Nagios NSCA</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>cslistener</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9091</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>xmltec-xmlmail</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.21  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Dell 1355cnw MFC config httpd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>515</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>printer</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>631</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ipp</td>
+                    <td>IPP Server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9100</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>jetdirect</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>50000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>printer-json</td>
+                    <td>Dell MFP JSON service</td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.229  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>554</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rtsp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.23  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>10.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nagios-nsca</td>
+                    <td>Nagios NSCA</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http-proxy</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>cslistener</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.24  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>5000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5001</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5357</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.242  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>3389</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ms-wbt-server</td>
+                    <td>Microsoft Terminal Services</td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.27  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>21</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ftp</td>
+                    <td>ProFTPD</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>10.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Apache httpd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>111</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rpcbind</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>3.X - 4.X</td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>3.X - 4.X</td>
+                </tr>
+                    
+                <tr>
+                    <td>514</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>shell</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>548</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>afp</td>
+                    <td>Netatalk</td>
+                    <td>3.1.9.q3</td>
+                </tr>
+                    
+                <tr>
+                    <td>2049</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nfs</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>3260</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>iscsi</td>
+                    <td>Synology DSM iSCSI</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5051</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ida-agent</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6881</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http-proxy</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8081</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Apache httpd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8200</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>upnp</td>
+                    <td>QNAP DLNA</td>
+                    <td>1.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>9001</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tor-orport</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>32768</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>32769</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vnc</td>
+                    <td>VNC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>49152</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>upnp</td>
+                    <td>Portable SDK for UPnP devices</td>
+                    <td>1.6.22</td>
+                </tr>
+                    
+                <tr>
+                    <td>49154</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vnc</td>
+                    <td>VNC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>49155</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.3  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>135</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>msrpc</td>
+                    <td>Microsoft Windows RPC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Microsoft Windows netbios-ssn</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>microsoft-ds</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>902</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vmware-auth</td>
+                    <td>VMware Authentication Daemon</td>
+                    <td>1.10</td>
+                </tr>
+                    
+                <tr>
+                    <td>912</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vmware-auth</td>
+                    <td>VMware Authentication Daemon</td>
+                    <td>1.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>3000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Node.js Express framework</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3389</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ms-wbt-server</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5357</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Microsoft HTTPAPI httpd</td>
+                    <td>2.0</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.5  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>5.9p1.RL Allied Telesis</td>
+                </tr>
+                    
+                <tr>
+                    <td>23</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>telnet</td>
+                    <td>Cisco SG300-28p switch telnetd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>GoAhead WebServer</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>GoAhead WebServer</td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.51  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Microsoft IIS httpd</td>
+                    <td>10.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>135</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>msrpc</td>
+                    <td>Microsoft Windows RPC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Microsoft Windows netbios-ssn</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>microsoft-ds</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3389</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ms-wbt-server</td>
+                    <td>Microsoft Terminal Services</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5357</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Microsoft HTTPAPI httpd</td>
+                    <td>2.0</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.52  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.11</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.53  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>7.9p1 Raspbian 10+deb10u4</td>
+                </tr>
+                    
+                <tr>
+                    <td>5900</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vnc</td>
+                    <td>RealVNC Enterprise</td>
+                    <td>5.3 or later</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.57  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.11</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td>1.24.0</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.60  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>21</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ftp</td>
+                    <td>APC AOS ftpd</td>
+                    <td>6.6.4</td>
+                </tr>
+                    
+                <tr>
+                    <td>23</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>telnet</td>
+                    <td>APC AP9630 network management telnetd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>tcpwrapped</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.61  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Microsoft IIS httpd</td>
+                    <td>10.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>135</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>msrpc</td>
+                    <td>Microsoft Windows RPC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Microsoft Windows netbios-ssn</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>microsoft-ds</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>libwww-perl-daemon httpd</td>
+                    <td>6.04</td>
+                </tr>
+                    
+                <tr>
+                    <td>9090</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>echo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.62  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>7</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>echo</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>discard</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>13</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>daytime</td>
+                    <td>Microsoft Windows USA daytime</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>17</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>qotd</td>
+                    <td>Windows qotd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>19</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>chargen</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>135</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>msrpc</td>
+                    <td>Microsoft Windows RPC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Microsoft Windows netbios-ssn</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>microsoft-ds</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2179</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vmrdp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2968</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>enpp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3389</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ms-wbt-server</td>
+                    <td>Microsoft Terminal Services</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5357</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Microsoft HTTPAPI httpd</td>
+                    <td>2.0</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.70  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>53</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>domain</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3001</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nessus</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.71  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>53</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>domain</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3001</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nessus</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.72  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>53</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>domain</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3001</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nessus</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.75  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nagios-nsca</td>
+                    <td>Nagios NSCA</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Apache Tomcat</td>
+                    <td>9.0.105</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.76  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td>1.28.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>90</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Apache httpd</td>
+                    <td>2.4.65</td>
+                </tr>
+                    
+                <tr>
+                    <td>3306</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>mysql</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nagios-nsca</td>
+                    <td>Nagios NSCA</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Apache httpd</td>
+                    <td>2.4.65</td>
+                </tr>
+                    
+                <tr>
+                    <td>8081</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>blackice-icecap</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8085</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8089</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.80  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.3</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>111</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rpcbind</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>2049</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nfs</td>
+                    <td></td>
+                    <td>3-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>4848</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>OpenResty web app server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>upnp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8086</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Apache Tomcat</td>
+                    <td>8.5.97</td>
+                </tr>
+                    
+                <tr>
+                    <td>8087</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>simplifymedia</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.81  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>23</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>telnet</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>webserver</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td>webserver</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2068</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>avocentkvm</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.82  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.2p1 Debian 2+deb12u3</td>
+                </tr>
+                    
+                <tr>
+                    <td>111</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rpcbind</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>3128</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Proxmox Virtual Environment REST API</td>
+                    <td>3.0</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.83  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.8</td>
+                </tr>
+                    
+                <tr>
+                    <td>23</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>telnet</td>
+                    <td>Linux telnetd</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>1234</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ppp</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>4000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Node.js Express framework</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>5900</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>vnc</td>
+                    <td>VNC</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8002</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>teradataordbms</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9100</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>jetdirect</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.85  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>OpenResty web app server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>81</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>OpenResty web app server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>85</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>mit-ml-dev</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>111</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rpcbind</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td>openresty</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>3006</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3007</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6881</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>bittorrent-tracker</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nagios-nsca</td>
+                    <td>Nagios NSCA</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http-proxy</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https-alt</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9090</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Golang net/http server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9091</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>xmltec-xmlmail</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>32769</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>filenet-rpc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>32771</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>sometimes-rpc5</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.86  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>OpenResty web app server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>81</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>OpenResty web app server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>85</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>mit-ml-dev</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>111</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>rpcbind</td>
+                    <td></td>
+                    <td>2-4</td>
+                </tr>
+                    
+                <tr>
+                    <td>139</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https</td>
+                    <td>openresty</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>445</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>netbios-ssn</td>
+                    <td>Samba smbd</td>
+                    <td>4.6.2</td>
+                </tr>
+                    
+                <tr>
+                    <td>3006</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3007</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>6881</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>bittorrent-tracker</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nagios-nsca</td>
+                    <td>Nagios NSCA</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http-proxy</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>https-alt</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9090</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Golang net/http server</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9091</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>xmltec-xmlmail</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>32769</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>filenet-rpc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>32771</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>sometimes-rpc5</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.87  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.11</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>Apache httpd</td>
+                    <td>2.4.62</td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>nagios-nsca</td>
+                    <td>Nagios NSCA</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>9090</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>zeus-admin</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.90  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>8.9p1 Ubuntu 3ubuntu0.13</td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.91 (zabbixhost) - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td>OpenSSH</td>
+                    <td>9.6p1 Ubuntu 3ubuntu13.13</td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td>1.24.0</td>
+                </tr>
+                    
+                <tr>
+                    <td>8000</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>http-alt</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>8080</td>
+                    <td>tcp</td>
+                    <td class="">filtered</td>
+                    <td>http-proxy</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="host-block">
+        <h2>Host: 192.168.1.97  - <span class="status-up">UP</span></h2>
+            
+        <table>
+            <thead>
+                <tr>
+                    <th>Port</th>
+                    <th>Protocol</th>
+                    <th>State</th>
+                    <th>Service</th>
+                    <th>Product</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>22</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>ssh</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>23</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>telnet</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>80</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>389</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>ldap</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>443</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>http</td>
+                    <td>nginx</td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>636</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>ldapssl</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2001</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>dc</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>2068</td>
+                    <td>tcp</td>
+                    <td class="port-open">open</td>
+                    <td>avocentkvm</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3268</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>globalcatLDAP</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    
+                <tr>
+                    <td>3269</td>
+                    <td>tcp</td>
+                    <td class="">closed</td>
+                    <td>globalcatLDAPssl</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                    </tbody></table></div>
+    <div class="footer">
+        <p>Report generated by Gemini Code Assist Nmap Parser.</p>
+    </div>
+</body>
+</html>
+    
